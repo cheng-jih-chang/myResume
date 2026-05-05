@@ -15,16 +15,15 @@ body {
   background: #ffffff;
   align-items: center;
 }
-
 .navbar a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
-
 .navbar a.router-link-active {
   font-weight: bold;
   text-decoration: underline;
 }
+
 .router-views {
   display: flex;
   justify-content: center;

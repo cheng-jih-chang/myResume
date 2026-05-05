@@ -2,56 +2,68 @@
 
 <template>
   <div class="landing-container">
-    <h2>{{ project?.name }}</h2>
+    <div v-if="project">
+      <h2>{{ project.name }}</h2>
 
-    <div class="button-group">
-      <a
-        v-if="project?.url"
-        :href="project.url"
-        target="_blank"
-        class="landing-btn"
-        >🌐 {{ $t('QRcode.website') }}</a
-      >
-      <a
-        v-if="project?.youtubeLink"
-        :href="`https://youtu.be/${extractYouTubeId(project.youtubeLink)}`"
-        target="_blank"
-        class="landing-btn"
-        >📺 {{ $t('QRcode.YouTube') }}</a
-      >
-      <a
-        v-if="project?.githubLink"
-        :href="project.githubLink"
-        target="_blank"
-        class="landing-btn"
-        >💻 {{ $t('QRcode.GitHub') }}</a
-      >
+      <div class="button-group">
+        <a
+          v-if="project?.url"
+          :href="project.url"
+          target="_blank"
+          class="landing-btn"
+          >🌐 {{ $t('QRcode.website') }}</a
+        >
+        <a
+          v-if="project?.youtubeLink"
+          :href="`https://youtu.be/${extractYouTubeId(project.youtubeLink)}`"
+          target="_blank"
+          class="landing-btn"
+          >📺 {{ $t('QRcode.YouTube') }}</a
+        >
+        <a
+          v-if="project?.githubLink"
+          :href="project.githubLink"
+          target="_blank"
+          class="landing-btn"
+          >💻 {{ $t('QRcode.GitHub') }}</a
+        >
+      </div>
+    </div>
+    <div v-else>
+      <p style="color: red">⚠️ 找不到此專案（slug: {{ slug }}）</p>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { computed, watchEffect } from 'vue'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import zhData from '../data/resumeData.zh.js'
 import enData from '../data/resumeData.en.js'
 
 const route = useRoute()
-const router = useRouter()
 const { locale } = useI18n()
+
+const slug = computed(() => route.params.id)
 
 const resumeData = computed(() => {
   return locale.value === 'zh' ? zhData : enData
 })
 
-const projectName = route.params.id
-
 const project = computed(() => {
-  return resumeData.value.projects.find((p) => p.name === projectName)
+  return resumeData.value.projects.find((p) => p.slug === slug.value)
 })
 
-// 將各種 YouTube 連結統一為 youtu.be/xxxx
+// optional: auto-detect locale by slug
+const zhSlugs = zhData.projects.map((p) => p.slug)
+const enSlugs = enData.projects.map((p) => p.slug)
+if (zhSlugs.includes(slug.value)) {
+  locale.value = 'zh'
+} else if (enSlugs.includes(slug.value)) {
+  locale.value = 'en'
+}
+
 function extractYouTubeId(link) {
   if (!link) return ''
   const patterns = [
@@ -65,6 +77,11 @@ function extractYouTubeId(link) {
   }
   return ''
 }
+
+watchEffect(() => {
+  console.log('🧩 Current slug:', slug.value)
+  console.log('📦 Loaded project:', project.value)
+})
 </script>
 
 <style scoped>

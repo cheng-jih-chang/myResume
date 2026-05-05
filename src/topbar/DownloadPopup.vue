@@ -6,7 +6,12 @@
   <div class="popup-backdrop" @click.self="$emit('close')">
     <div class="popup">
       <h3>{{ $t('download.select') }}</h3>
-      <label v-if="route.path === '/projects/personal'">
+      <label
+        v-if="
+          route.path === '/projects/personal' ||
+          route.path === '/projects/group'
+        "
+      >
         <input type="checkbox" v-model="showQRCode" />
         {{ $t('download.YtToQrcode') }}
       </label>
@@ -49,8 +54,8 @@ const downloadPDF = () => {
 
   // Generate and download the PDF with scaling options
   html2pdf()
-    .from(content) // Convert the content inside the container to PDF
     .set(options) // Apply the predefined options
+    .from(content) // Convert the content inside the container to PDF
     .save() // Trigger the download
 }
 </script>

@@ -10,7 +10,7 @@
     <ul>
       <!-- Logo -->
       <li v-for="menu in logoMenus" :key="menu.id">
-        <a :href="menu.href" :class="menu.class"></a>
+        <a class="logo-img" :href="menu.href"></a>
       </li>
 
       <!-- Visible Menus -->
@@ -103,7 +103,7 @@ const props = defineProps({
   onSelectMenuItem: Function,
 })
 
-const { t, locale } = useI18n()
+const { locale } = useI18n()
 const wrapperRef = ref(null)
 const openMenu = ref(null)
 const visibleCount = ref(7)

@@ -43,30 +43,24 @@
             </div>
 
             <!-- YT iframe -->
-            <div class="project-right">
-              <iframe
-                v-if="project.youtubeLink && !showQRCode"
-                width="180"
-                :height="'130'"
-                :src="project.youtubeLink"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-
-              <div
-                v-else-if="project.youtubeLink && showQRCode"
-                class="project-right qr-box"
-              >
-                <img
-                  v-if="qrMap[project.name]"
-                  :src="qrMap[project.name]"
-                  alt="QR Code"
-                  class="qr-img"
-                />
-                <div v-else class="qr-warning">No QR code available</div>
-              </div>
+            <div v-if="showQRCode" class="project-right qr-box">
+              <img
+                v-if="qrMap[project.slug]"
+                :src="qrMap[project.slug]"
+                alt="QR Code"
+                class="qr-code"
+              />
+              <div v-else class="qr-warning">No QR code available</div>
             </div>
+            <iframe
+              v-else-if="project.youtubeLink"
+              width="180"
+              height="130"
+              :src="project.youtubeLink"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </li>
         </ul>
       </section>
@@ -101,7 +95,7 @@ const AllGroupProjects = computed(() => {
   )
   if (showQRCode.value) {
     for (const project of filtered) {
-      console.log(project.name, qrMap[project.name])
+      console.log(project.slug, qrMap[project.slug])
       console.log('QR MAP Keys:', Object.keys(qrMap))
     }
   }

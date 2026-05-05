@@ -82,6 +82,22 @@
   font-size: 20px;
 }
 
+.jobApplication-right-box {
+  display: flex;
+  flex-direction: column; /* 垂直方向排版 */
+  align-items: center; /* 水平置中（交錯軸） */
+  justify-content: center; /* 垂直置中（主軸） */
+  width: 500px;
+  height: 60px; /* ❗ 需要有高度才能垂直置中 */
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fbefc889;
+  font-size: 20px;
+  text-align: center;
+}
+
 /* === Section Titles === */
 .section-title {
   display: block;
@@ -118,7 +134,6 @@
 /* === For PersonalProjects === */
 .scroll-window {
   max-height: 600px;
-  overflow-y: auto;
   padding-right: 10px;
 }
 .scroll-window::-webkit-scrollbar {
@@ -132,28 +147,34 @@
   display: flex;
   padding: 4px;
   margin: 0;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #ffffff;
 }
 .project-left {
   display: flex;
   flex-direction: column;
   align-items: left;
-  flex: 5;
+  flex: 9;
   padding: 0;
   margin: 0;
   font-size: 14px;
 }
 .project-right {
-  flex: 2;
+  flex: 1;
   padding: 3px;
   margin: 0;
   font-size: 14px;
 }
+
 .qr-code {
   width: 100px;
   height: 100px;
   object-fit: contain;
   margin-left: 1rem;
+}
+.project-right qr-box {
+  margin-left: auto;
 }
 
 /* Responsive design with zooming effect */

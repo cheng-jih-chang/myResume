@@ -45,8 +45,8 @@
             <!-- YT iframe -->
             <div v-if="showQRCode" class="project-right qr-box">
               <img
-                v-if="qrMap[project.name]"
-                :src="qrMap[project.name]"
+                v-if="qrMap[project.slug]"
+                :src="qrMap[project.slug]"
                 alt="QR Code"
                 class="qr-code"
               />
@@ -95,7 +95,7 @@ const AllProjects = computed(() => {
   )
   if (showQRCode.value) {
     for (const project of filtered) {
-      console.log(project.name, qrMap[project.name])
+      console.log(project.slug, qrMap[project.slug])
       console.log('QR MAP Keys:', Object.keys(qrMap))
     }
   }

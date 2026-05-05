@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
 import './Topbar.css'
 
 defineProps({
@@ -27,8 +26,6 @@ defineProps({
 })
 
 defineEmits(['select'])
-
-const { t } = useI18n()
 </script>
 
 <style scoped src="./Topbar.css"></style>

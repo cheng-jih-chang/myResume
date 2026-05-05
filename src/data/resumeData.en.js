@@ -61,16 +61,6 @@ I’m eager to contribute to digital products with strong logic, practical skill
 
   projects: [
     {
-      name: 'Render Server for Crypto Data',
-      url: 'https://crypto-index-backend.onrender.com/kline',
-      type: ['back', 'project'],
-      descriptionSimple:
-        'Backend API for serving historical crypto prices and K-line data, integrating CoinGecko and Binance APIs. Deployed on Render.',
-      descriptionComplete:
-        'A backend server built with Node.js and Express, providing APIs for historical crypto prices and K-line chart data. Integrates CoinGecko and Binance APIs with automatic updates and caching. Deployed on Render and used by the Crypto Index Tracker frontend. Try out the /kline endpoint.',
-      githubLink: 'https://github.com/LazyBear168/crypto-index-backend',
-    },
-    {
       name: 'Crypto Index App',
       url: 'https://crypto-index-app.web.app/',
       type: ['front', 'resume', 'Home', 'project'],
@@ -80,6 +70,7 @@ I’m eager to contribute to digital products with strong logic, practical skill
         'A cryptocurrency index tracking platform built with React and deployed on Firebase. Integrates CoinGecko and Binance APIs, along with a custom backend hosted on Render to serve K-line charts and historical price data. Displays prices and charts for multiple assets with responsive design and state management. Enhances practical API integration and data visualization skills.',
       githubLink: 'https://github.com/LazyBear168/crypto-index-app',
       youtubeLink: 'https://www.youtube.com/embed/ug8ybXsst6U',
+      slug: 'crypto-index-app',
     },
     {
       name: 'Habit Tracker',
@@ -91,6 +82,7 @@ I’m eager to contribute to digital products with strong logic, practical skill
         'A habit tracking tool built with React.js, supporting nested lists, daily check-ins, custom habits, and statistics visualization. Integrated with Firebase for data storage and authentication. Strengthens frontend-backend integration and user experience design skills.',
       githubLink: 'https://github.com/LazyBear168/habit-tracker',
       youtubeLink: 'https://www.youtube.com/embed/Kf4CASg4BnQ',
+      slug: 'habit-tracker',
     },
     {
       name: 'Chengs Resume',
@@ -99,9 +91,21 @@ I’m eager to contribute to digital products with strong logic, practical skill
       descriptionSimple:
         'A personal resume website showcasing background, skills, and projects with responsive layout and bilingual support (you are here!).',
       descriptionComplete:
-        'A personal resume site built with Vue.js, using Vue Router and Vue i18n for page navigation and language management. Features bilingual (EN/ZH) support and responsive layout, covering self-introduction, skills, education, and projects. Deployed on Firebase Hosting. Demonstrates frontend and internationalization skills. (Yes, you’re on this site!)',
+        'A personal resume site built with Vue.js, using Vue Router and Vue i18n for page navigation and language management. Features bilingual (EN/ZH) support and responsive layout, covering self-introduction, skills, education, and projects. Demonstrates frontend and internationalization skills. (Yes, you’re on this site!)',
       githubLink: 'https://github.com/LazyBear168/myResume',
       youtubeLink: 'https://www.youtube.com/embed/y5jfSLDpivs',
+      slug: 'chengs-resume',
+    },
+    {
+      name: 'Render Server for Crypto Data',
+      url: 'https://crypto-index-backend.onrender.com/kline',
+      type: ['back', 'project'],
+      descriptionSimple:
+        'Backend API for serving historical crypto prices and K-line data, integrating CoinGecko and Binance APIs. Deployed on Render.',
+      descriptionComplete:
+        'A backend server built with Node.js and Express, providing APIs for historical crypto prices and K-line chart data. Integrates CoinGecko and Binance APIs with automatic updates and caching. Deployed on Render and used by the Crypto Index Tracker frontend. Try out the /kline endpoint.',
+      githubLink: 'https://github.com/LazyBear168/crypto-index-backend',
+      slug: 'render-server-crypto-backend',
     },
     {
       name: 'Click here for more',
@@ -118,6 +122,7 @@ I’m eager to contribute to digital products with strong logic, practical skill
       githubLink:
         'https://github.com/stanCodeTW/AI-Projects/tree/main/SC201Mar2024Projects/GroupE',
       youtubeLink: 'https://www.youtube.com/embed/pWVPCW4UvTI?start=218',
+      slug: 'ai-stock-prediction',
     },
   ],
 
@@ -191,5 +196,63 @@ I’m eager to contribute to digital products with strong logic, practical skill
     myResume: 'My Resume Website',
     cryptoIndex: 'My Crypto Index Website',
     habitTracker: 'My Habit Tracker Website',
+  },
+
+  // Only for BIM Engineer--------------------------------------------------
+
+  BIM_engineer_resume: {
+    progarmming: [
+      'Revit',
+      'Navisworks',
+      'AutoCAD',
+      'ETABS',
+      'SAP2000',
+      'STAAD.Pro',
+      'MIDAS',
+      'Abaqus',
+      'MATLAB',
+      'LabVIEW',
+      'Python',
+      'GitHub',
+      'Git',
+      'Node.js',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'React',
+      'Vue.js',
+      'Wolfram Mathematica',
+      'LaTeX',
+      'Grapher',
+    ],
+    languages: ['Mandarin Chinese', 'Taiwanese', 'English'],
+    softskills: [
+      'Communication',
+      'Teamwork',
+      'Independent Work',
+      'Problem Solving',
+    ],
+    jobApplication: 'Position Applied: BIM Engineer',
+    workDetails: [
+      {
+        project: 'Chaozhou Depot Project',
+      },
+      {
+        project: 'Taoyuan Railway Underground Project',
+      },
+      {
+        project: 'Taoyuan MRT Green Line',
+      },
+      {
+        project: 'Taroko Tunnel Rehabilitation Project',
+      },
+    ],
+    selfIntro: `My name is Cheng-Jih Chang, and I hold a Master’s degree in Civil Engineering with practical experience in structural design and public infrastructure projects. During my time at CECI Engineering Consultants, all of my projects utilized Revit and AutoCAD for modeling and drawing production, which has enabled me to build solid BIM application and drawing integration skills.
+
+I am well-versed in interdepartmental drawing coordination, capable of resolving design clashes and meeting on-site drawing requirements. I can independently complete structural modeling and drawing tasks.
+
+I deeply understand the importance of integrating construction site conditions with design drawings, and I leverage digital tools to improve design efficiency. In addition to hands-on experience in architectural and structural modeling, I have used Navisworks for clash detection and am eager to expand my expertise to improve real-world engineering workflows.
+
+As a BIM Engineer, I hope to contribute my modeling and drafting expertise, collaborate with the team to streamline design and construction processes, and become a professional who understands engineering, masters digital tools, and excels in teamwork.`,
   },
 }
