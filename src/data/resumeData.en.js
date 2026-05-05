@@ -7,8 +7,9 @@ import MyPicture from '/assets/Mypicture.jpg'
 export default {
   picture: MyPicture,
   name: 'Cheng-Jih Chang',
-  License: 'Civil Engineering Technician',
-  education: [
+  license: 'Civil Engineering Technician',
+  profileTitle: 'BIM Application Development / Revit API',
+  educationAndWorkExperience: [
     {
       school: 'CECI Engineering Consultants, Inc., Taiwan',
       degree: 'Structural Engineer',
@@ -25,10 +26,10 @@ export default {
       duration: '2016/09 - 2020/07',
     },
   ],
-  jobApplication:
+  targetPosition:
     'Job Title: Front-end web engineer, full/back-end web engineer',
   skills: {
-    progarmming: [
+    technicalSkills: [
       'JavaScript',
       'HTML',
       'CSS',
@@ -42,7 +43,7 @@ export default {
       'Wolfram Mathematica',
     ],
     languages: ['Mandarin', 'Taiwanese (native)', 'English (intermediate)'],
-    softskills: [
+    softSkills: [
       'Communication & Coordination',
       'Teamwork',
       'Independent Work',
@@ -50,6 +51,7 @@ export default {
     ],
   },
   selfIntro: {
+    civil_TyLin_selfIntroSimple: `I’m an engineering professional with a background in structural design and a passion for web development. Skilled in JavaScript, Vue, React, and backend tools like Node.js and Python, I bring strong problem-solving and analytical abilities. I’m eager to apply my skills in a frontend or full-stack role to build impactful digital products.`,
     selfIntroSimple: `I’m an engineering professional with a background in structural design and a passion for web development. Skilled in JavaScript, Vue, React, and backend tools like Node.js and Python, I bring strong problem-solving and analytical abilities. I’m eager to apply my skills in a frontend or full-stack role to build impactful digital products.`,
     selfIntroComplete: `I’m a structural engineering professional turned web developer, passionate about solving technical challenges. My experience in large-scale infrastructure projects honed my design skills and cross-functional collaboration.
 Driven by a desire to streamline workflows, I built a seismic design tool used in the Chaozhou Railway Factory project—this sparked my shift into software. Now, I work with JavaScript, Vue, React..., Key projects include:
@@ -198,10 +200,46 @@ I’m eager to contribute to digital products with strong logic, practical skill
     habitTracker: 'My Habit Tracker Website',
   },
 
+  // Only for Ty-lin Spatial Geospatial Information Engineer-----------------------------------------
+
+  civilTyLinSkills: {
+    technicalSkills: [
+      'Revit',
+      'Navisworks',
+      'AutoCAD',
+      'ETABS',
+      'SAP2000',
+      'STAAD.Pro',
+      'MIDAS',
+      'Abaqus',
+      'MATLAB',
+      'LabVIEW',
+      'Python',
+      'Github',
+      'Git',
+      'Node.js',
+      'JavaScript',
+      'HTML',
+      'Css',
+      'React',
+      'vue.js',
+      'Wolfram Mathematica',
+      'LaTeX',
+      'Grapher',
+    ],
+    languages: ['Mandarin', 'Taiwanese', 'English'],
+    softSkills: [
+      'Communication & Coordination',
+      'Teamwork',
+      'Independent Work',
+      'Problem Solving',
+    ],
+  },
+
   // Only for BIM Engineer--------------------------------------------------
 
-  BIM_engineer_resume: {
-    progarmming: [
+  bimEngineerResume: {
+    technicalSkills: [
       'Revit',
       'Navisworks',
       'AutoCAD',
@@ -226,13 +264,13 @@ I’m eager to contribute to digital products with strong logic, practical skill
       'Grapher',
     ],
     languages: ['Mandarin Chinese', 'Taiwanese', 'English'],
-    softskills: [
+    softSkills: [
       'Communication',
       'Teamwork',
       'Independent Work',
       'Problem Solving',
     ],
-    jobApplication: 'Position Applied: BIM Engineer',
+    targetPosition: 'Position Applied: BIM Engineer',
     workDetails: [
       {
         project: 'Chaozhou Depot Project',

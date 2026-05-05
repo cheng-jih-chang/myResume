@@ -1,14 +1,21 @@
 // File: src/data/resumeData.zh.js
 // Author: Cheng
-// Description: Resume data in Chinese (Traditional) with added descriptions for various sections
+// Description: Resume data in Chinese (Traditional) for BIM / Revit API / Engineering Software profile
 
 import MyPicture from '/assets/Mypicture.jpg'
 
 export default {
   picture: MyPicture,
   name: '張丞日',
-  License: '土木技師',
-  education: [
+  license: '土木技師',
+  profileTitle: 'BIM 應用開發 / Revit API',
+
+  educationAndWorkExperience: [
+    {
+      school: 'BIM MEP 工程師',
+      degree: '機電管線配置、BIM 協調與 Revit 自動化工具開發',
+      duration: '2024/08 - 現在',
+    },
     {
       school: '台灣世曦工程顧問股份有限公司',
       degree: '結構工程師',
@@ -22,54 +29,62 @@ export default {
     },
     {
       school: '國立暨南國際大學 土木工程學系',
+      degree: '學士學位',
       duration: '2016/09 - 2020/07',
     },
   ],
-  jobApplication: '應徵職務：BIM工程師、空間地理資訊/測量工程師',
+
+  targetPosition: '應徵職務：BIM 應用研發工程師 / Revit 二次開發工程師',
+
   skills: {
-    progarmming: [
-      'Python',
+    technicalSkills: [
       'Revit',
-      'Github',
-      'Git',
-      'Node.js',
+      'Revit API',
+      'C#',
+      '.NET Framework',
+      'Dynamo',
+      'Python',
       'Navisworks',
+      'AutoCAD',
+      'BIM 協調',
+      '機電管線配置',
+      '碰撞檢討',
+      'Git',
+      'GitHub',
       'JavaScript',
-      'HTML',
-      'Css',
       'React',
-      'vue.js',
-      'LabVIEW',
-      'Matlab',
-      'Wolfram Mathematica',
+      'Vue.js',
+      'Node.js',
+      'HTML',
+      'CSS',
+      'Firebase',
       'ETABS',
       'SAP2000',
       'STAAD.Pro',
       'MIDAS',
       'Abaqus',
-      'AutoCAD',
       'MATLAB',
       'LabVIEW',
       'Wolfram Mathematica',
       'LaTeX',
-      'Grapher',
     ],
-    languages: ['中文', '台語(母語)', '英文(普通)'],
-    softskills: ['溝通協調', '團隊合作', '獨立作業', '問題解決'],
+    languages: ['中文', '台語（母語）', '英文（普通）'],
+    softSkills: ['溝通協調', '團隊合作', '獨立作業', '問題分析', '工程流程優化'],
   },
+
   selfIntro: {
-    selfIntroSimple: `　我是一位具備工程背景並熱衷於技術創新的學習者，過去在結構工程領域累積紮實的邏輯思維與解決問題能力。近年來積極投入前端與全端網頁開發學習，熟悉 JavaScript、HTML、CSS、Vue、React 等技術，也具備 Node.js 與 Python 等後端工具操作經驗。
-    　期望轉職為網頁前端／全端工程師，結合理工思維與實作能力，參與產品開發並持續精進工程技能。`,
-    selfIntroComplete: `　我是一位擁有結構工程背景、邏輯嚴謹且熱愛技術挑戰的求職者。過去在土木結構領域從事工程設計，參與多項大型公共工程專案，期間累積了專業的結構設計能力與跨部門協作經驗。
+    selfIntroSimple: `　我具備土木結構工程與 BIM MEP 實務經驗，曾任鐵道工程結構工程師，並通過土木技師考試。目前專注於 BIM 工程自動化與 Revit 二次開發，能將工程流程、圖面判讀與模型協調經驗轉化為可執行的軟體工具。
 
-    　在實務工作中，我不僅執行設計任務，也主動開發輔助設計工具。其中包含一套鋼結構耐震設計軟體，用於潮州機廠鋼構主廠房之結構分析與設計，提升設計效率與準確度。這段經歷讓我更加確定自己對於軟體開發的熱情與潛力。因此，我積極投入前端與全端技術的學習，掌握了 JavaScript、HTML、CSS、Vue.js、React 等前端技術，並具備 Node.js、Python 的後端實作經驗。
-    
-    　我完成了多項實戰作品，例如：
-    Crypto Index Tracker：整合 CoinGecko、Binance API 與自建後端的加密貨幣追蹤平台，支援即時價格查詢與歷史 K 線圖。
-    Sunny Habit App：具巢狀習慣清單與統計圖表的打卡應用，整合 Firebase 實作驗證與資料儲存。
-    個人履歷網站：支援中英文切換的響應式個人網站，展示我的技能、作品與背景。
+　相較於單純軟體開發者，我熟悉工程現場與設計端常見痛點；相較於傳統 BIM 工程師，我具備 C#、Python、JavaScript 等開發能力，能自行規劃並實作 Revit API 工具、CAD 圖面辨識流程與自動標註功能。未來希望朝 BIM 應用研發、工程軟體開發與數位工程平台方向發展。`,
 
-    　我期望將原本在結構工程中培養的邏輯思維與實務精神，轉化為對軟體產品的貢獻。未來希望能在前端或全端開發領域持續成長，與團隊共同打造兼具效能與體驗的數位產品。`,
+    selfIntroComplete: `　我是一位具備土木結構工程、BIM MEP 實務與軟體開發能力的工程技術人員。過去曾於台灣世曦工程顧問股份有限公司擔任結構工程師，參與鐵道、地下結構、廠房與既有結構補強等公共工程專案，熟悉結構分析、圖說協調、Revit / AutoCAD 建模與跨專業溝通流程，並已通過土木技師考試。
+
+　目前我任職於 BIM MEP 相關職務，負責機電管線配置、模型整合、碰撞檢討與工程協調。在實務工作中，我持續思考如何將重複性的建模、標註、圖面整理與資料判讀流程工具化，因此投入 Revit API 與 C# 外掛開發，建立以 Revit 為核心的 BIM 自動化工具。
+
+　我目前開發的 Revit Tool 專案包含自動標註、CAD 圖面辨識、管線與構件生成、立管標註輔助等功能，並採用 Host + Logic DLL 的架構支援開發階段熱更新，提升測試與迭代效率。透過這些工具，我希望將工程經驗轉化為可維護、可擴充、能實際改善工作流程的軟體系統。
+
+　相較於單純軟體開發者，我理解 BIM 團隊、設計端與施工端在圖面協調上的實際痛點；相較於傳統 BIM 工程師，我具備 C#、Python、JavaScript、React、Vue、Node.js 等開發能力，能從需求分析、流程拆解到工具實作獨立完成。未來希望朝 BIM 應用研發工程師、Revit 二次開發工程師與工程軟體開發方向持續發展。`,
+
     civil_TyLin_selfIntroSimple: `我是張丞日，具土木工程碩士背景，畢業於台灣大學土木系，主修結構工程。過去於台灣世曦工程顧問公司擔任結構工程師，參與多項公共建設，累積了豐富的建模分析、圖說整合及跨部門協作經驗。
 
 在實務過程中，我深刻體會到現地資訊精度與整合效率對工程品質與執行成效的關鍵性，也因此對測量成果檢核、GIS資料建置、地下管線整合與3D模型協作產生濃厚興趣。儘管我的專業出發點是結構，但我樂於主動學習跨領域知識，曾在工作中自行開發設計輔助工具，提高工作效率，期待未來能將工程與數位能力有效結合。
@@ -78,6 +93,39 @@ export default {
   },
 
   projects: [
+    {
+      name: 'Revit Tool｜BIM 自動化與 Revit 二次開發工具',
+      url: '',
+      type: ['Home', 'resume', 'project', 'bim'],
+      descriptionSimple:
+        '使用 C#、Revit API 與 .NET Framework 開發 Revit 外掛工具，包含自動標註、CAD 圖面辨識、管線與構件生成、立管標註輔助等功能。',
+      descriptionComplete:
+        '使用 C#、Revit API 與 .NET Framework 開發 Revit 外掛工具，專案採用 Host + Logic DLL 架構，支援開發階段熱更新，提升測試與迭代效率。功能包含自動標註、CAD 圖塊與幾何辨識、管線與構件生成、機電標註輔助等，目標是減少重複性建模與出圖工作，並將工程邏輯轉化為可維護、可擴充的自動化流程。',
+      githubLink: '',
+      slug: 'revit-tool',
+    },
+    {
+      name: 'CAD to MEP｜由 CAD 圖面輔助生成 MEP 物件',
+      url: '',
+      type: ['Home', 'resume', 'project', 'bim'],
+      descriptionSimple:
+        '開發 CAD 幾何辨識與圖層分類流程，透過 CSV pattern library 管理圖層、物件類型與生成規則，輔助從 CAD 圖面推估 MEP 元件位置。',
+      descriptionComplete:
+        '開發 CAD 幾何辨識與圖層分類流程，透過 CSV pattern library 管理圖層、物件類型、放置規則與生成參數，輔助從 CAD 圖面推估噴頭、管線或其他 MEP 元件的位置。專案包含幾何檢查、圖層正規化、預覽點生成、診斷紀錄與批次生成流程，並逐步朝向從 CAD 圖面自動化生成 BIM 元件的方向發展。',
+      githubLink: '',
+      slug: 'cad-to-mep',
+    },
+    {
+      name: 'Riser Annotation｜立管標註自動化工具',
+      url: '',
+      type: ['Home', 'resume', 'project', 'bim'],
+      descriptionSimple:
+        '根據 Revit 視圖範圍與管線位置，自動判斷立管標籤方向，並輔助標籤對齊管線中點。',
+      descriptionComplete:
+        '根據 Revit 目前視圖範圍、樓層高度與管線位置，自動判斷立管標籤方向，區分向上與向下立管標註。工具亦嘗試讀取族群原點參考平面與標籤偏移資訊，使標籤能更穩定地對齊管線中點，提升 MEP 標註一致性與出圖效率。',
+      githubLink: '',
+      slug: 'riser-annotation',
+    },
     {
       name: 'Crypto Index App',
       url: 'https://crypto-index-app.web.app/',
@@ -136,7 +184,7 @@ export default {
       type: ['group'],
       descriptionSimple: '',
       descriptionComplete:
-        '本專案旨在提升股價預測的準確性，通過多模態訓練結合新聞文本和股價蠟燭圖數據。使用圖神經網絡（GNN）進行特徵轉換和融合，克服單一數據源分析的不足。我們預期透過此專案證明多模態數據源和先進的圖神經網絡技術在金融市場預測中的潛力和應用價值。並期許後續能進一步優化模型和擴大數據來源，獲得更精確的預測結果。而我在此專案主要負責文字處理與BERT語言模型的架構',
+        '本專案旨在提升股價預測的準確性，通過多模態訓練結合新聞文本和股價蠟燭圖數據。使用圖神經網絡（GNN）進行特徵轉換和融合，克服單一數據源分析的不足。我們預期透過此專案證明多模態數據源和先進的圖神經網絡技術在金融市場預測中的潛力和應用價值。並期許後續能進一步優化模型和擴大數據來源，獲得更精確的預測結果。而我在此專案主要負責文字處理與 BERT 語言模型的架構。',
       githubLink:
         'https://github.com/stanCodeTW/AI-Projects/tree/main/SC201Mar2024Projects/GroupE',
       youtubeLink: 'https://www.youtube.com/embed/pWVPCW4UvTI?start=218',
@@ -165,6 +213,18 @@ export default {
 
   experiences: [
     {
+      title: 'BIM MEP 工程師',
+      duration: '2024/08 - 現在',
+      description:
+        '負責機電管線配置、模型整合、碰撞檢討與跨專業協調，並持續開發 Revit 自動化工具以提升建模與出圖效率。',
+    },
+    {
+      title: '台灣世曦工程顧問股份有限公司 結構工程師',
+      duration: '2022/09 - 2024/07',
+      description:
+        '負責鐵道與公共工程相關結構分析、設計檢核、AutoCAD / Revit 圖面協調與模型建置。',
+    },
+    {
       title: '科技部研究助理',
       duration: '2020/09 - 2022/07',
       description: '實驗操作、LabVIEW、Grapher、MTS 控制器招標。',
@@ -182,6 +242,21 @@ export default {
   ],
 
   workDetails: [
+    {
+      project: 'Revit Tool｜BIM 自動化與 Revit 二次開發工具',
+      description:
+        '使用 C#、Revit API 與 .NET Framework 開發 Revit 外掛工具，包含自動標註、CAD 圖面辨識、管線與構件生成、機電標註輔助等功能。專案採用 Host + Logic DLL 架構，支援開發階段熱更新，提升測試與迭代效率。工具目標為減少重複性建模與出圖工作，並將工程邏輯轉化為可維護的自動化流程。',
+    },
+    {
+      project: 'CAD to MEP｜由 CAD 圖面輔助生成 MEP 物件',
+      description:
+        '開發 CAD 幾何辨識與圖層分類流程，透過 CSV pattern library 管理圖層、物件類型與生成規則，輔助從 CAD 圖面推估噴頭、管線或其他 MEP 元件的位置。專案包含幾何檢查、圖層正規化、預覽點生成、診斷紀錄與批次生成流程。',
+    },
+    {
+      project: 'Riser Annotation｜立管標註自動化工具',
+      description:
+        '根據 Revit 視圖範圍與管線位置，自動判斷立管標籤方向，並嘗試以族群原點參考平面與管線中點對齊，提升 MEP 標註一致性與出圖效率。',
+    },
     {
       project: '潮州機廠工程',
       description:
@@ -203,16 +278,17 @@ export default {
         '參與既有結構補強，從現況調查、結構模擬到補強方案評估皆有涉獵。熟悉既有系統改造流程，並提升了問題分析、資料整理與技術提案能力，具備將工程問題轉化為系統解決方案的實務經驗。',
     },
   ],
+
   demoVideo: {
     myResume: '我的履歷網站',
-    cryptoIndex: '我的Crypto index網站',
-    habitTracker: '我的Habit Tracker 網站',
+    cryptoIndex: '我的 Crypto index 網站',
+    habitTracker: '我的 Habit Tracker 網站',
   },
 
   // Only for Ty-lin Spatial Geospatial Information Engineer-----------------------------------------
 
-  civil_TyLin_skills: {
-    progarmming: [
+  civilTyLinSkills: {
+    technicalSkills: [
       'Revit',
       'Navisworks',
       'AutoCAD',
@@ -237,16 +313,32 @@ export default {
       'Grapher',
     ],
     languages: ['中文', '台語', '英文'],
-    softskills: ['溝通協調', '團隊合作', '獨立作業', '問題解決'],
+    softSkills: ['溝通協調', '團隊合作', '獨立作業', '問題解決'],
   },
 
   // Only for BIM Engineer--------------------------------------------------
 
-  BIM_engineer_resume: {
-    progarmming: [
+  bimEngineerResume: {
+    technicalSkills: [
       'Revit',
+      'Revit API',
+      'C#',
+      '.NET Framework',
+      'Dynamo',
+      'Python',
       'Navisworks',
       'AutoCAD',
+      'BIM 協調',
+      '機電管線配置',
+      '碰撞檢討',
+      'Git',
+      'GitHub',
+      'JavaScript',
+      'React',
+      'Vue.js',
+      'Node.js',
+      'HTML',
+      'CSS',
       'ETABS',
       'SAP2000',
       'STAAD.Pro',
@@ -254,48 +346,53 @@ export default {
       'Abaqus',
       'MATLAB',
       'LabVIEW',
-      'Python',
-      'Github',
-      'Git',
-      'Node.js',
-      'JavaScript',
-      'HTML',
-      'Css',
-      'React',
-      'vue.js',
       'Wolfram Mathematica',
       'LaTeX',
-      'Grapher',
     ],
     languages: ['中文', '台語', '英文'],
-    softskills: ['溝通協調', '團隊合作', '獨立作業', '問題解決'],
-    jobApplication: '應徵職務：BIM工程師',
+    softSkills: ['溝通協調', '團隊合作', '獨立作業', '問題分析', '工程流程優化'],
+    targetPosition: '應徵職務：BIM 應用研發工程師 / Revit 二次開發工程師',
     workDetails: [
+      {
+        project: 'Revit Tool｜BIM 自動化與 Revit 二次開發工具',
+        description:
+          '使用 C#、Revit API 與 .NET Framework 開發 Revit 外掛工具，包含自動標註、CAD 圖面辨識、管線與構件生成、機電標註輔助等功能。專案採用 Host + Logic DLL 架構，支援開發階段熱更新，提升測試與迭代效率。工具目標為減少重複性建模與出圖工作，並將工程邏輯轉化為可維護的自動化流程。',
+      },
+      {
+        project: 'CAD to MEP｜由 CAD 圖面輔助生成 MEP 物件',
+        description:
+          '開發 CAD 幾何辨識與圖層分類流程，透過 CSV pattern library 管理圖層、物件類型與生成規則，輔助從 CAD 圖面推估噴頭、管線或其他 MEP 元件的位置。專案包含幾何檢查、圖層正規化、預覽點生成、診斷紀錄與批次生成流程。',
+      },
+      {
+        project: 'Riser Annotation｜立管標註自動化工具',
+        description:
+          '根據 Revit 視圖範圍與管線位置，自動判斷立管標籤方向，並嘗試以族群原點參考平面與管線中點對齊，提升 MEP 標註一致性與出圖效率。',
+      },
       {
         project: '潮州機廠工程',
         description:
-          '擔任結構設計窗口，主導鋼構主廠房與地下設施之建模與結構分析，並負責結構 BIM 模型建構與整合與圖說協調，透過 AutoCAD 繪製細部圖說，並搭配 Navisworks 進行衝突檢查與協同作業。在設計過程中，頻繁與機電、設備與建築師等跨部門單位協作，強化溝通與系統整合能力。同時亦自主開發輔助設計工具，提高工作效率與精準度，展現技術主動性與開發潛力。',
+          '擔任結構設計窗口，主導鋼構主廠房與地下設施之建模與結構分析，並負責結構 BIM 模型建構、整合與圖說協調，透過 AutoCAD 繪製細部圖說，並搭配 Navisworks 進行衝突檢查與協同作業。在設計過程中，頻繁與機電、設備與建築師等跨部門單位協作，強化溝通與系統整合能力。同時亦自主開發輔助設計工具，提高工作效率與精準度。',
       },
       {
         project: '桃園鐵路地下化工程',
         description:
-          '以 AutoCAD 建立地下構造（通風口、緊急出口等）2D結構圖面，熟悉分段施工流程。參與多項地下結構設施（如緊急出口、通風口）的設計，涵蓋樓梯間、設備間與通風豎井等，深入理解地下構造之設計流程與施工限制。熟悉多階段工序，培養縝密邏輯與專案管理能力。',
+          '以 AutoCAD 建立地下構造（通風口、緊急出口等）2D 結構圖面，熟悉分段施工流程。參與多項地下結構設施之設計，涵蓋樓梯間、設備間與通風豎井等，深入理解地下構造之設計流程與施工限制。',
       },
       {
         project: '桃園捷運綠線',
         description:
-          '以 AutoCAD 與 Revit 建立小型廠房之結構模型，負責小型廠房之結構設計與荷載分析，並與各系統（如機電、建築）介面單位協調設計需求與圖說調整，展現靈活應變與跨職能溝通能力。過程中亦強化對建模工具與資料整合的掌握。',
+          '以 AutoCAD 與 Revit 建立小型廠房之結構模型，負責小型廠房之結構設計與荷載分析，並與各系統（如機電、建築）介面單位協調設計需求與圖說調整，展現靈活應變與跨職能溝通能力。',
       },
       {
         project: '太魯閣明隧道整建工程',
         description:
-          '以 AutoCAD 建立結構補強圖說，參與既有結構補強，從現況調查、結構模擬到補強方案評估皆有涉獵。熟悉既有系統改造流程，並提升了問題分析、資料整理與技術提案能力，具備將工程問題轉化為系統解決方案的實務經驗。',
+          '以 AutoCAD 建立結構補強圖說，參與既有結構補強，從現況調查、結構模擬到補強方案評估皆有涉獵。熟悉既有系統改造流程，並提升問題分析、資料整理與技術提案能力。',
       },
     ],
-    selfIntro: `　我是張丞日，土木工程碩士畢業，具結構設計實務與公共建設經驗。過去在台灣世曦工作期間，所有專案皆使用 Revit 與 AutoCAD 進行建模與出圖，累積紮實的 BIM 應用與圖說整合能力。我熟悉跨部門圖面協調，擅長處理設計衝突與現場圖資需求，並能獨立完成結構模型建立與圖說繪製。
+    selfIntro: `　我具備土木結構工程與 BIM MEP 實務經驗，曾任鐵道工程結構工程師，並通過土木技師考試。目前專注於 BIM 工程自動化與 Revit 二次開發，能將工程流程、圖面判讀與模型協調經驗轉化為可執行的軟體工具。
 
-                　我深刻理解施工現場與圖面整合的關鍵，並善於運用工具提升設計效率。除了具備建築與結構模型實作能力外，我也使用過 Navisworks 衝突檢核，期待將技術延伸至更高效率的工程實務中。
+　相較於單純軟體開發者，我熟悉工程現場與設計端常見痛點；相較於傳統 BIM 工程師，我具備 C#、Python、JavaScript 等開發能力，能自行規劃並實作 Revit API 工具、CAD 圖面辨識流程與自動標註功能。
 
-                　未來期望能在 BIM 工程師職務中貢獻我的建模與繪圖專業，並與團隊共同優化設計與施工流程，成為懂工程、精工具、能協作的專業人才。`,
+　未來希望能在 BIM 應用研發工程師、Revit 二次開發工程師或工程軟體開發相關職務中，結合土木工程背景、BIM 實務經驗與軟體開發能力，協助團隊提升建模、協調、檢核與出圖流程的效率。`,
   },
 }

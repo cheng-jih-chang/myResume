@@ -9,7 +9,7 @@
       <h1 :class="locale === 'en' ? 'name-en' : 'name-zh'">
         {{ resumeData.name }}
       </h1>
-      <h1>{{ resumeData.License }}</h1>
+      <h1>{{ resumeData.license }}</h1>
 
       <h3 class="section-title">{{ $t('resume.contact') }}</h3>
       <ul class="contact-list">
@@ -23,19 +23,19 @@
       <ul class="contact-list">
         <li>
           <strong>{{ $t('resume.skillsFields.computer') }}:</strong><br />
-          {{ resumeData.civil_TyLin_skills.progarmming.join(', ') }}
+          {{ resumeData.civilTyLinSkills.technicalSkills.join(', ') }}
         </li>
         <br />
         <li>
           <strong>{{ $t('resume.languages') }}:</strong>
           <br />
-          {{ resumeData.civil_TyLin_skills.languages.join(', ') }}
+          {{ resumeData.civilTyLinSkills.languages.join(', ') }}
         </li>
         <br />
         <li>
           <strong>{{ $t('resume.softskills') }}:</strong>
           <br />
-          {{ resumeData.civil_TyLin_skills.softskills.join(', ') }}
+          {{ resumeData.civilTyLinSkills.softSkills.join(', ') }}
         </li>
       </ul>
     </div>
@@ -44,7 +44,7 @@
       <section>
         <h3>{{ $t('resume.StudyWorkExperience') }}</h3>
         <ul>
-          <li v-for="item in resumeData.education" :key="item.school">
+          <li v-for="item in resumeData.educationAndWorkExperience" :key="item.school">
             {{ item.school }}
             <span v-if="item.degree"
               >{{ item.degree }}（{{ item.duration }}）</span

@@ -15,7 +15,7 @@
         <span v-if="ntu.degree">{{ ntu.degree }}</span>
       </h3>
       <div class="jobApplication-box">
-        <h3>{{ resumeData.jobApplication }}</h3>
+        <h3>{{ resumeData.targetPosition }}</h3>
       </div>
 
       <section>
@@ -86,7 +86,7 @@ const resumeData = computed(() =>
 const showQRCode = inject('showQRCode')
 
 const ntu = computed(() =>
-  resumeData.value.education.find((item) => item.key === 'ntu')
+  resumeData.value.educationAndWorkExperience.find((item) => item.key === 'ntu')
 )
 
 const AllProjects = computed(() => {

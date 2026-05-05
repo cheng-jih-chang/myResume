@@ -9,7 +9,8 @@
       <h1 :class="locale === 'en' ? 'name-en' : 'name-zh'">
         {{ resumeData.name }}
       </h1>
-      <h1>{{ resumeData.License }}</h1>
+      <h2 class="license-title">{{ resumeData.license }}</h2>
+      <p class="profile-title">{{ resumeData.profileTitle }}</p>
 
       <h3 class="section-title">{{ $t('resume.contact') }}</h3>
       <ul class="contact-list">
@@ -23,31 +24,31 @@
       <ul class="contact-list">
         <li>
           <strong>{{ $t('resume.skillsFields.computer') }}:</strong><br />
-          {{ resumeData.BIM_engineer_resume.progarmming.join(', ') }}
+          {{ resumeData.bimEngineerResume.technicalSkills.join(', ') }}
         </li>
         <br />
         <li>
           <strong>{{ $t('resume.languages') }}:</strong>
           <br />
-          {{ resumeData.BIM_engineer_resume.languages.join(', ') }}
+          {{ resumeData.bimEngineerResume.languages.join(', ') }}
         </li>
         <br />
         <li>
           <strong>{{ $t('resume.softskills') }}:</strong>
           <br />
-          {{ resumeData.BIM_engineer_resume.softskills.join(', ') }}
+          {{ resumeData.bimEngineerResume.softSkills.join(', ') }}
         </li>
       </ul>
     </div>
 
     <div class="right-view">
       <div class="jobApplication-right-box">
-        <h3>{{ resumeData.BIM_engineer_resume.jobApplication }}</h3>
+        <h3>{{ resumeData.bimEngineerResume.targetPosition }}</h3>
       </div>
       <section>
         <h3>{{ $t('resume.StudyWorkExperience') }}</h3>
         <ul>
-          <li v-for="item in resumeData.education" :key="item.school">
+          <li v-for="item in resumeData.educationAndWorkExperience" :key="item.school">
             {{ item.school }}
             <span v-if="item.degree"
               >{{ item.degree }}（{{ item.duration }}）</span
@@ -61,7 +62,7 @@
         <h3>{{ $t('resume.participateProject') }}</h3>
         <ul>
           <li
-            v-for="work in resumeData.BIM_engineer_resume.workDetails"
+            v-for="work in resumeData.bimEngineerResume.workDetails"
             :key="work.project"
           >
             <strong>{{ work.project }}</strong
@@ -127,7 +128,7 @@
       <section>
         <h3>{{ $t('Home.selfIntroduction') }}</h3>
         <p class="paragraph">
-          {{ resumeData.BIM_engineer_resume.selfIntro }}
+          {{ resumeData.bimEngineerResume.selfIntro }}
         </p>
       </section>
     </div>

@@ -72,8 +72,9 @@ git clone https://github.com/LazyBear168/myResume.git
 cd myResume
 
 # Install dependencies
-npm install
+winget install OpenJS.NodeJS.LTS
+npm.cmd install
 
 # Start the local server
-npm run dev
+npm.cmd run dev
 

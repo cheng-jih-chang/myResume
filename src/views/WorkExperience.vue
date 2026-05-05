@@ -6,13 +6,13 @@
     <div class="box">
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 
-      <h1 class="name">{{ resumeData.name }} / {{ resumeData.License }}</h1>
+      <h1 class="name">{{ resumeData.name }} / {{ resumeData.license }}</h1>
       <h3 :class="locale === 'en' ? 'education-en' : 'education-zh'" v-if="ntu">
         {{ ntu.school }}
         <span v-if="ntu.degree">{{ ntu.degree }}</span>
       </h3>
       <div class="jobApplication-box">
-        <h3>{{ resumeData.jobApplication }}</h3>
+        <h3>{{ resumeData.targetPosition }}</h3>
       </div>
       <section>
         <h3 class="section-title">{{ $t('resume.work') }}</h3>
@@ -43,6 +43,6 @@ const resumeData = computed(() =>
 )
 
 const ntu = computed(() =>
-  resumeData.value.education.find((item) => item.key === 'ntu')
+  resumeData.value.educationAndWorkExperience.find((item) => item.key === 'ntu')
 )
 </script>

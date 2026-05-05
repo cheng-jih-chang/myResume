@@ -22,7 +22,7 @@
       <ul class="contact-list">
         <li>
           <strong>{{ $t('resume.skillsFields.computer') }}:</strong><br />
-          {{ resumeData.skills.progarmming.join(', ') }}
+          {{ resumeData.skills.technicalSkills.join(', ') }}
         </li>
         <br />
         <li>
@@ -34,7 +34,7 @@
         <li>
           <strong>{{ $t('resume.softskills') }}:</strong>
           <br />
-          {{ resumeData.skills.softskills.join(', ') }}
+          {{ resumeData.skills.softSkills.join(', ') }}
         </li>
       </ul>
     </div>
@@ -43,7 +43,7 @@
       <section>
         <h3>{{ $t('resume.StudyWorkExperience') }}</h3>
         <ul>
-          <li v-for="item in resumeData.education" :key="item.school">
+          <li v-for="item in resumeData.educationAndWorkExperience" :key="item.school">
             {{ item.school }}<br />
             <span v-if="item.degree"
               >{{ item.degree }}（{{ item.duration }}）</span
