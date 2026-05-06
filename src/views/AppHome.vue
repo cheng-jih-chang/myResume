@@ -4,7 +4,7 @@
 The content is dynamically updated based on the selected language using Vue i18n. -->
 
 <template>
-  <div class="container">
+  <div class="topdown-container">
     <div class="box">
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 

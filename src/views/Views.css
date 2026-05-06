@@ -1,5 +1,12 @@
 /* File: src/views/Resume.css */
 
+.topdown-container {
+  display: flex;
+  background-color: white;
+  width: 210mm;
+  min-height: 297mm;
+}
+
 .container {
   display: flex;
   background-color: white;
@@ -19,6 +26,7 @@
   background-color: #b4b4b4;
   font-size: 16px;
 }
+
 .box-left {
   display: flex;
   flex-direction: column;
@@ -102,11 +110,15 @@
 
 .jobApplication-right-box {
   display: flex;
-  flex-direction: column; /* 垂直方向排版 */
-  align-items: center; /* 水平置中（交錯軸） */
-  justify-content: center; /* 垂直置中（主軸） */
+  flex-direction: column;
+  /* 垂直方向排版 */
+  align-items: center;
+  /* 水平置中（交錯軸） */
+  justify-content: center;
+  /* 垂直置中（主軸） */
   width: 500px;
-  height: 60px; /* ❗ 需要有高度才能垂直置中 */
+  height: 60px;
+  /* ❗ 需要有高度才能垂直置中 */
   padding: 0;
   margin: 0;
   border: 1px solid #ccc;
@@ -144,6 +156,7 @@
 .workDescription {
   font-size: 16px;
 }
+
 .workDescription li {
   margin: 1rem;
   list-style: none;
@@ -154,13 +167,16 @@
   max-height: 600px;
   padding-right: 10px;
 }
+
 .scroll-window::-webkit-scrollbar {
   width: 6px;
 }
+
 .scroll-window::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .project-box {
   display: flex;
   padding: 4px;
@@ -169,6 +185,7 @@
   align-items: center;
   border-bottom: 1px solid #ffffff;
 }
+
 .project-left {
   display: flex;
   flex-direction: column;
@@ -178,6 +195,7 @@
   margin: 0;
   font-size: 14px;
 }
+
 .project-right {
   flex: 1;
   padding: 3px;
@@ -191,6 +209,7 @@
   object-fit: contain;
   margin-left: 1rem;
 }
+
 .project-right qr-box {
   margin-left: auto;
 }

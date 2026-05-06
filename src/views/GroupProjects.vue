@@ -3,7 +3,7 @@
 <!-- Description: -->
 
 <template>
-  <div class="container">
+  <div class="topdown-container">
     <div class="box">
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 

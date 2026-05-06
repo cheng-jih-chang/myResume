@@ -62,7 +62,7 @@
         <h3>{{ $t('resume.participateProject') }}</h3>
         <ul>
           <li
-            v-for="work in resumeData.bimEngineerResume.workDetails"
+            v-for="work in resumeData.bimEngineerResume.workDetailsSimple"
             :key="work.project"
           >
             <strong>{{ work.project }}</strong
@@ -111,17 +111,6 @@
             }}
           </li>
           <li>{{ resumeData.research.tools.join('、') }}</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>{{ $t('resume.experience') }}</h3>
-        <ul>
-          <li v-for="exp in resumeData.experiences" :key="exp.title">
-            <strong>{{ exp.title }}</strong
-            >（{{ exp.duration }}）<br />
-            {{ exp.description }}
-          </li>
         </ul>
       </section>
 

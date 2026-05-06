@@ -14,7 +14,7 @@ export default {
     {
       school: 'BIM MEP 工程師',
       degree: '機電管線配置、BIM 協調與 Revit 自動化工具開發',
-      duration: '2024/08 - 現在',
+      duration: '2025/08 - 現在',
     },
     {
       school: '台灣世曦工程顧問股份有限公司',
@@ -387,6 +387,33 @@ export default {
         project: '太魯閣明隧道整建工程',
         description:
           '以 AutoCAD 建立結構補強圖說，參與既有結構補強，從現況調查、結構模擬到補強方案評估皆有涉獵。熟悉既有系統改造流程，並提升問題分析、資料整理與技術提案能力。',
+      },
+    ],
+    workDetailsSimple: [
+      {
+        project: 'Revit Tool｜BIM 自動化與 Revit 二次開發工具',
+        description:
+          '使用 C#、Revit API 與 .NET Framework 開發 Revit 外掛，包含自動標註、CAD 圖面辨識、MEP 元件生成與立管標註輔助，並採 Host + Logic DLL 架構支援開發階段熱更新。',
+      },
+      {
+        project: 'CAD to MEP｜由 CAD 圖面輔助生成 MEP 物件',
+        description:
+          '開發 CAD 幾何辨識與圖層分類流程，透過 CSV pattern library 管理圖層、物件類型與生成規則，輔助從 CAD 圖面推估 MEP 元件位置。',
+      },
+      {
+        project: 'Riser Annotation｜立管標註自動化工具',
+        description:
+          '根據 Revit 視圖範圍與管線位置，自動判斷立管標籤方向，並輔助標籤對齊管線中點，提升 MEP 標註一致性與出圖效率。',
+      },
+      {
+        project: '潮州機廠工程',
+        description:
+          '擔任結構設計窗口，負責鋼構主廠房與地下設施之結構分析、BIM 模型整合與圖說協調，並透過 AutoCAD、Revit、Navisworks 進行跨專業協作。',
+      },
+      {
+        project: '鐵道與建築結構設計專案',
+        description:
+          '參與桃園鐵路地下化、桃園捷運綠線與太魯閣明隧道整建等專案，負責結構圖說、模型建立、設計檢核與介面協調，累積公共工程與跨專業整合經驗。',
       },
     ],
     selfIntro: `　我具備土木結構工程與 BIM MEP 實務經驗，曾任鐵道工程結構工程師，並通過土木技師考試。目前專注於 BIM 工程自動化與 Revit 二次開發，能將工程流程、圖面判讀與模型協調經驗轉化為可執行的軟體工具。
