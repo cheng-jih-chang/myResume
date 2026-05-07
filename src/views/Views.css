@@ -1,10 +1,10 @@
-/* File: src/views/Resume.css */
+/* File: src/views/Views.css */
 
 .topdown-container {
   display: flex;
   background-color: white;
   width: 210mm;
-  min-height: 297mm;
+  min-height: 400mm;
 }
 
 .container {

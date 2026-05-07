@@ -214,7 +214,7 @@ export default {
   experiences: [
     {
       title: 'BIM MEP 工程師',
-      duration: '2024/08 - 現在',
+      duration: '2025/08 - 現在',
       description:
         '負責機電管線配置、模型整合、碰撞檢討與跨專業協調，並持續開發 Revit 自動化工具以提升建模與出圖效率。',
     },
