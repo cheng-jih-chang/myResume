@@ -14,12 +14,10 @@ const sharedMenus = [
     aria: 'About Me section',
     id: 'aboutMenu',
     items: [
-      //{ key: 'submenu.profile', type: 'route', route: 'aboutMe/resume' },
-      //{ key: '土木工程', type: 'route', route: 'aboutMe/civil_resume' },
       {
         key: 'submenu.profile',
         type: 'route',
-        route: 'aboutMe/bim_engineer_resume',
+        route: 'aboutMe/resume',
       },
     ],
     hidePriority: 1,

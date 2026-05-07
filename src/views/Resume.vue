@@ -9,6 +9,8 @@
       <h1 :class="locale === 'en' ? 'name-en' : 'name-zh'">
         {{ resumeData.name }}
       </h1>
+      <h2 class="license-title">{{ resumeData.license }}</h2>
+      <p class="profile-title">{{ resumeData.profileTitle }}</p>
 
       <h3 class="section-title">{{ $t('resume.contact') }}</h3>
       <ul class="contact-list">
@@ -22,33 +24,50 @@
       <ul class="contact-list">
         <li>
           <strong>{{ $t('resume.skillsFields.computer') }}:</strong><br />
-          {{ resumeData.skills.technicalSkills.join(', ') }}
+          {{ resumeData.bimEngineerResume.technicalSkills.join(', ') }}
         </li>
         <br />
         <li>
           <strong>{{ $t('resume.languages') }}:</strong>
           <br />
-          {{ resumeData.skills.languages.join(', ') }}
+          {{ resumeData.bimEngineerResume.languages.join(', ') }}
         </li>
         <br />
         <li>
           <strong>{{ $t('resume.softskills') }}:</strong>
           <br />
-          {{ resumeData.skills.softSkills.join(', ') }}
+          {{ resumeData.bimEngineerResume.softSkills.join(', ') }}
         </li>
       </ul>
     </div>
 
     <div class="right-view">
+      <div class="jobApplication-right-box">
+        <h3>{{ resumeData.bimEngineerResume.targetPosition }}</h3>
+      </div>
       <section>
         <h3>{{ $t('resume.StudyWorkExperience') }}</h3>
         <ul>
           <li v-for="item in resumeData.educationAndWorkExperience" :key="item.school">
-            {{ item.school }}<br />
+            {{ item.school }}
             <span v-if="item.degree"
               >{{ item.degree }}（{{ item.duration }}）</span
             >
             <span v-else>（{{ item.duration }}）</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>{{ $t('resume.participateProject') }}</h3>
+        <ul>
+          <li
+            v-for="work in resumeData.bimEngineerResume.workDetailsSimple"
+            :key="work.project"
+          >
+            <strong>{{ work.project }}</strong
+            ><br />
+            {{ work.description }}
           </li>
         </ul>
       </section>
@@ -96,39 +115,10 @@
       </section>
 
       <section>
-        <h3>{{ $t('resume.experience') }}</h3>
-        <ul>
-          <li v-for="exp in resumeData.experiences" :key="exp.title">
-            <strong>{{ exp.title }}</strong
-            >（{{ exp.duration }}）<br />
-            {{ exp.description }}
-          </li>
-        </ul>
-      </section>
-
-      <section>
         <h3>{{ $t('Home.selfIntroduction') }}</h3>
-        <p class="paragraph">{{ resumeData.selfIntro.selfIntroComplete }}</p>
-      </section>
-
-      <section>
-        <h3>{{ $t('Home.myPortfolio') }}</h3>
-        <ul>
-          <li v-for="project in resumeProjects" :key="project.name">
-            <template v-if="project.url.startsWith('/')">
-              <router-link :to="project.url">
-                <strong>{{ project.name }}</strong>
-              </router-link>
-            </template>
-            <template v-else>
-              <a :href="project.url" target="_blank" rel="noopener noreferrer">
-                <strong>{{ project.name }}</strong>
-              </a>
-            </template>
-            <br />
-            {{ project.descriptionSimple }}<br />
-          </li>
-        </ul>
+        <p class="paragraph">
+          {{ resumeData.bimEngineerResume.selfIntro }}
+        </p>
       </section>
     </div>
   </div>

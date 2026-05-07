@@ -3,7 +3,7 @@
 <!-- Description: This view showcases all of the user's personal projects. -->
 
 <template>
-  <div class="topdown-container">
+  <div class="container">
     <div class="box">
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 

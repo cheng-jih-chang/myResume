@@ -1,17 +1,10 @@
 /* File: src/views/Views.css */
 
-.topdown-container {
-  display: flex;
-  background-color: white;
-  width: 210mm;
-  min-height: 400mm;
-}
-
 .container {
   display: flex;
   background-color: white;
   width: 210mm;
-  height: 297mm;
+  min-height: 297mm;
 }
 
 /* === Left Section === */
@@ -20,11 +13,17 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
+  min-height: inherit;
   padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #b4b4b4;
   font-size: 16px;
+}
+
+.box section {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .box-left {
@@ -56,13 +55,13 @@
 }
 
 .name-en {
-  font-size: 24px;
+  font-size: 22px;
   padding: 0;
   margin: 0.5rem;
 }
 
 .license-title {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
   margin: 24px 0 8px;
   text-align: center;
@@ -164,8 +163,11 @@
 
 /* === For PersonalProjects === */
 .scroll-window {
-  max-height: 600px;
   padding-right: 10px;
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .scroll-window::-webkit-scrollbar {
@@ -189,7 +191,7 @@
 .project-left {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   flex: 9;
   padding: 0;
   margin: 0;
@@ -210,7 +212,7 @@
   margin-left: 1rem;
 }
 
-.project-right qr-box {
+.project-right.qr-box {
   margin-left: auto;
 }
 

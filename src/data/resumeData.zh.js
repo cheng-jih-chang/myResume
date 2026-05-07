@@ -284,38 +284,6 @@ export default {
     cryptoIndex: '我的 Crypto index 網站',
     habitTracker: '我的 Habit Tracker 網站',
   },
-
-  // Only for Ty-lin Spatial Geospatial Information Engineer-----------------------------------------
-
-  civilTyLinSkills: {
-    technicalSkills: [
-      'Revit',
-      'Navisworks',
-      'AutoCAD',
-      'ETABS',
-      'SAP2000',
-      'STAAD.Pro',
-      'MIDAS',
-      'Abaqus',
-      'MATLAB',
-      'LabVIEW',
-      'Python',
-      'Github',
-      'Git',
-      'Node.js',
-      'JavaScript',
-      'HTML',
-      'Css',
-      'React',
-      'vue.js',
-      'Wolfram Mathematica',
-      'LaTeX',
-      'Grapher',
-    ],
-    languages: ['中文', '台語', '英文'],
-    softSkills: ['溝通協調', '團隊合作', '獨立作業', '問題解決'],
-  },
-
   // Only for BIM Engineer--------------------------------------------------
 
   bimEngineerResume: {
