@@ -50,6 +50,11 @@ const sharedMenus = [
         type: 'route',
         route: 'revit-automation-tools',
       },
+      {
+        key: 'submenu.autoCadAutomationTools',
+        type: 'route',
+        route: 'autocad-automation-tools',
+      },
     ],
     hidePriority: 3,
   },
