@@ -101,9 +101,42 @@ I believe my experience in structural projects has equipped me with strong probl
 
   projects: [
     {
+      name: 'CAD TO BIM Automation Workflow',
+      url: '/cad-bim-automation',
+      type: ['Home', 'project'],
+      descriptionSimple:
+        'An integrated automation workflow combining AutoCAD preprocessing, CAD drawing recognition, the Revit API, and MEP model generation, covering CAD-to-BIM modeling, automated sleeves, annotations, and riser generation.',
+      descriptionComplete:
+        'An integrated automation workflow combining AutoCAD preprocessing, CAD drawing recognition, the Revit API, and MEP model generation, covering CAD-to-BIM modeling, automated sleeves, annotations, and riser generation.',
+      githubLink: '',
+      slug: 'cad-bim-automation',
+    },
+    {
+      name: 'Revit Automation Tools',
+      url: '/revit-automation-tools',
+      type: ['Home', 'project'],
+      descriptionSimple:
+        'A collection of Revit MEP automation tools, including automated legend generation, riser annotations, pipe-size annotations, distance annotations, pipe bottom elevation annotations, MEP component registration and generation, automated sleeves, and riser generation.',
+      descriptionComplete:
+        'A collection of Revit MEP automation tools, including automated legend generation, riser annotations, pipe-size annotations, distance annotations, pipe bottom elevation annotations, MEP component registration and generation, automated sleeves, and riser generation.',
+      githubLink: '',
+      slug: 'revit-automation-tools',
+    },
+    {
+      name: 'AutoCAD Automation Tools',
+      url: '/autocad-automation-tools',
+      type: ['Home', 'project'],
+      descriptionSimple:
+        'AutoCAD preprocessing and drawing-data tools, including batch block export, similar symbol processing, automatic pipe-size recognition, automatic legend block building, and batch Xref binding.',
+      descriptionComplete:
+        'AutoCAD preprocessing and drawing-data tools, including batch block export, similar symbol processing, automatic pipe-size recognition, automatic legend block building, and batch Xref binding.',
+      githubLink: '',
+      slug: 'autocad-automation-tools',
+    },
+    {
       name: 'Revit Tool｜BIM Automation and Revit API Development Tool',
       url: '',
-      type: ['Home', 'resume', 'project', 'bim'],
+      type: ['resume', 'bim'],
       descriptionSimple:
         'A Revit add-in developed with C#, Revit API, and .NET Framework, including automated annotation, CAD drawing recognition, pipe and component generation, and MEP annotation assistance.',
       descriptionComplete:
@@ -114,7 +147,7 @@ I believe my experience in structural projects has equipped me with strong probl
     {
       name: 'CAD to MEP｜Generating MEP Elements from CAD Drawings',
       url: '',
-      type: ['Home', 'resume', 'project', 'bim'],
+      type: ['resume', 'bim'],
       descriptionSimple:
         'A CAD geometry recognition and layer-classification workflow using a CSV pattern library to manage layers, object types, and generation rules for estimating MEP element locations from CAD drawings.',
       descriptionComplete:
@@ -125,7 +158,7 @@ I believe my experience in structural projects has equipped me with strong probl
     {
       name: 'Riser Annotation｜Automated Riser Annotation Tool',
       url: '',
-      type: ['Home', 'resume', 'project', 'bim'],
+      type: ['resume', 'bim'],
       descriptionSimple:
         'Automatically determines riser tag direction based on the Revit view range and pipe location, and assists in aligning tags to pipe midpoints.',
       descriptionComplete:
@@ -258,19 +291,19 @@ I believe my experience in structural projects has equipped me with strong probl
 
   workDetails: [
     {
-      project: 'Revit Tool｜BIM Automation and Revit API Development Tool',
+      project: 'CAD TO BIM Automation Workflow',
       description:
-        'Developed a Revit add-in using C#, Revit API, and .NET Framework, including automated annotation, CAD drawing recognition, pipe and component generation, and MEP annotation assistance. The project adopts a Host + Logic DLL architecture to support hot reload during development, improving testing and iteration efficiency. The tool aims to reduce repetitive modeling and drafting work and transform engineering logic into maintainable automation workflows.',
+        'An integrated automation workflow combining AutoCAD preprocessing, CAD drawing recognition, the Revit API, and MEP model generation, covering CAD-to-BIM modeling, automated sleeves, annotations, and riser generation.',
     },
     {
-      project: 'CAD to MEP｜Generating MEP Elements from CAD Drawings',
+      project: 'Revit Automation Tools',
       description:
-        'Developed a CAD geometry recognition and layer-classification workflow using a CSV pattern library to manage layers, object types, and generation rules, assisting in estimating sprinkler, pipe, and other MEP element locations from CAD drawings. The project includes geometry inspection, layer normalization, preview point generation, diagnostic logging, and batch generation workflows.',
+        'A collection of Revit MEP automation tools, including automated legend generation, riser annotations, pipe-size annotations, distance annotations, pipe bottom elevation annotations, MEP component registration and generation, automated sleeves, and riser generation.',
     },
     {
-      project: 'Riser Annotation｜Automated Riser Annotation Tool',
+      project: 'AutoCAD Automation Tools',
       description:
-        'Automatically determines riser tag direction based on the Revit view range and pipe location, and attempts to align tags using family origin reference planes and pipe midpoints, improving MEP annotation consistency and drafting efficiency.',
+        'AutoCAD preprocessing and drawing-data tools, including batch block export, similar symbol processing, automatic pipe-size recognition, automatic legend block building, and batch Xref binding.',
     },
     {
       project: 'Chaozhou Railway Workshop Project',
@@ -418,19 +451,19 @@ I believe my experience in structural projects has equipped me with strong probl
     ],
     workDetailsSimple: [
       {
-        project: 'Revit Tool｜BIM Automation and Revit API Development Tool',
+        project: 'CAD TO BIM Automation Workflow',
         description:
-          'Developed a Revit add-in using C#, Revit API, and .NET Framework, including automated annotation, CAD drawing recognition, MEP element generation, and riser annotation assistance. The project adopts a Host + Logic DLL architecture to support hot reload during development.',
+          'An integrated automation workflow combining AutoCAD preprocessing, CAD drawing recognition, the Revit API, and MEP model generation, covering CAD-to-BIM modeling, automated sleeves, annotations, and riser generation.',
       },
       {
-        project: 'CAD to MEP｜Generating MEP Elements from CAD Drawings',
+        project: 'Revit Automation Tools',
         description:
-          'Developed a CAD geometry recognition and layer-classification workflow using a CSV pattern library to manage layers, object types, and generation rules, assisting in estimating MEP element locations from CAD drawings.',
+          'A collection of Revit MEP automation tools, including automated legend generation, riser annotations, pipe-size annotations, distance annotations, pipe bottom elevation annotations, MEP component registration and generation, automated sleeves, and riser generation.',
       },
       {
-        project: 'Riser Annotation｜Automated Riser Annotation Tool',
+        project: 'AutoCAD Automation Tools',
         description:
-          'Automatically determines riser tag direction based on the Revit view range and pipe location, and assists in aligning tags to pipe midpoints, improving MEP annotation consistency and drafting efficiency.',
+          'AutoCAD preprocessing and drawing-data tools, including batch block export, similar symbol processing, automatic pipe-size recognition, automatic legend block building, and batch Xref binding.',
       },
       {
         project: 'Chaozhou Railway Workshop Project',

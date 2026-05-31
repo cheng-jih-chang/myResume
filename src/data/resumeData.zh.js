@@ -24,7 +24,7 @@ export default {
     {
       key: 'ntu',
       school: '國立台灣大學 土木工程學系',
-      degree: '碩士學位',
+      degree: '結構組 碩士學位',
       duration: '2020/09 - 2022/09',
     },
     {
@@ -94,9 +94,42 @@ export default {
 
   projects: [
     {
+      name: 'CAD TO BIM自動化流程',
+      url: '/cad-bim-automation',
+      type: ['Home', 'project'],
+      descriptionSimple:
+        '整合 AutoCAD 前處理、CAD 圖面辨識、Revit API 與 MEP 模型生成流程，展示從 CAD 圖面到 BIM 建模、自動套管、自動標註與自動立管生成等完整自動化流程。',
+      descriptionComplete:
+        '整合 AutoCAD 前處理、CAD 圖面辨識、Revit API 與 MEP 模型生成流程，展示從 CAD 圖面到 BIM 建模、自動套管、自動標註與自動立管生成等完整自動化流程。',
+      githubLink: '',
+      slug: 'cad-bim-automation',
+    },
+    {
+      name: 'Revit自動化工具',
+      url: '/revit-automation-tools',
+      type: ['Home', 'project'],
+      descriptionSimple:
+        '介紹多個 Revit MEP 自動化按鈕，包含自動圖例生成、立管標註、管徑標註、距離標註、管底高程標註、MEP 元件註冊與生成、自動套管與自動立管生成。',
+      descriptionComplete:
+        '介紹多個 Revit MEP 自動化按鈕，包含自動圖例生成、立管標註、管徑標註、距離標註、管底高程標註、MEP 元件註冊與生成、自動套管與自動立管生成。',
+      githubLink: '',
+      slug: 'revit-automation-tools',
+    },
+    {
+      name: 'AutoCAD自動化工具',
+      url: '/autocad-automation-tools',
+      type: ['Home', 'project'],
+      descriptionSimple:
+        '介紹 AutoCAD 圖面前處理與資料整理工具，包含批次出圖塊、相似圖例處理、自動管徑辨識、自動圖例圖塊製作，以及批次外部參考併入等功能。',
+      descriptionComplete:
+        '介紹 AutoCAD 圖面前處理與資料整理工具，包含批次出圖塊、相似圖例處理、自動管徑辨識、自動圖例圖塊製作，以及批次外部參考併入等功能。',
+      githubLink: '',
+      slug: 'autocad-automation-tools',
+    },
+    {
       name: 'Revit Tool｜BIM 自動化與 Revit 二次開發工具',
       url: '',
-      type: ['Home', 'resume', 'project', 'bim'],
+      type: ['resume', 'bim'],
       descriptionSimple:
         '使用 C#、Revit API 與 .NET Framework 開發 Revit 外掛工具，包含自動標註、CAD 圖面辨識、管線與構件生成、立管標註輔助等功能。',
       descriptionComplete:
@@ -107,7 +140,7 @@ export default {
     {
       name: 'CAD to MEP｜由 CAD 圖面輔助生成 MEP 物件',
       url: '',
-      type: ['Home', 'resume', 'project', 'bim'],
+      type: ['resume', 'bim'],
       descriptionSimple:
         '開發 CAD 幾何辨識與圖層分類流程，透過 CSV pattern library 管理圖層、物件類型與生成規則，輔助從 CAD 圖面推估 MEP 元件位置。',
       descriptionComplete:
@@ -118,7 +151,7 @@ export default {
     {
       name: 'Riser Annotation｜立管標註自動化工具',
       url: '',
-      type: ['Home', 'resume', 'project', 'bim'],
+      type: ['resume', 'bim'],
       descriptionSimple:
         '根據 Revit 視圖範圍與管線位置，自動判斷立管標籤方向，並輔助標籤對齊管線中點。',
       descriptionComplete:
@@ -243,19 +276,19 @@ export default {
 
   workDetails: [
     {
-      project: 'Revit Tool｜BIM 自動化與 Revit 二次開發工具',
+      project: 'CAD TO BIM自動化流程',
       description:
-        '使用 C#、Revit API 與 .NET Framework 開發 Revit 外掛工具，包含自動標註、CAD 圖面辨識、管線與構件生成、機電標註輔助等功能。專案採用 Host + Logic DLL 架構，支援開發階段熱更新，提升測試與迭代效率。工具目標為減少重複性建模與出圖工作，並將工程邏輯轉化為可維護的自動化流程。',
+        '整合 AutoCAD 前處理、CAD 圖面辨識、Revit API 與 MEP 模型生成流程，展示從 CAD 圖面到 BIM 建模、自動套管、自動標註與自動立管生成等完整自動化流程。',
     },
     {
-      project: 'CAD to MEP｜由 CAD 圖面輔助生成 MEP 物件',
+      project: 'Revit自動化工具',
       description:
-        '開發 CAD 幾何辨識與圖層分類流程，透過 CSV pattern library 管理圖層、物件類型與生成規則，輔助從 CAD 圖面推估噴頭、管線或其他 MEP 元件的位置。專案包含幾何檢查、圖層正規化、預覽點生成、診斷紀錄與批次生成流程。',
+        '介紹多個 Revit MEP 自動化按鈕，包含自動圖例生成、立管標註、管徑標註、距離標註、管底高程標註、MEP 元件註冊與生成、自動套管與自動立管生成。',
     },
     {
-      project: 'Riser Annotation｜立管標註自動化工具',
+      project: 'AutoCAD自動化工具',
       description:
-        '根據 Revit 視圖範圍與管線位置，自動判斷立管標籤方向，並嘗試以族群原點參考平面與管線中點對齊，提升 MEP 標註一致性與出圖效率。',
+        '介紹 AutoCAD 圖面前處理與資料整理工具，包含批次出圖塊、相似圖例處理、自動管徑辨識、自動圖例圖塊製作，以及批次外部參考併入等功能。',
     },
     {
       project: '潮州機廠工程',
@@ -359,19 +392,19 @@ export default {
     ],
     workDetailsSimple: [
       {
-        project: 'Revit Tool｜BIM 自動化與 Revit 二次開發工具',
+        project: 'CAD TO BIM自動化流程',
         description:
-          '使用 C#、Revit API 與 .NET Framework 開發 Revit 外掛，包含自動標註、CAD 圖面辨識、MEP 元件生成與立管標註輔助，並採 Host + Logic DLL 架構支援開發階段熱更新。',
+          '整合 AutoCAD 前處理、CAD 圖面辨識、Revit API 與 MEP 模型生成流程，展示從 CAD 圖面到 BIM 建模、自動套管、自動標註與自動立管生成等完整自動化流程。',
       },
       {
-        project: 'CAD to MEP｜由 CAD 圖面輔助生成 MEP 物件',
+        project: 'Revit自動化工具',
         description:
-          '開發 CAD 幾何辨識與圖層分類流程，透過 CSV pattern library 管理圖層、物件類型與生成規則，輔助從 CAD 圖面推估 MEP 元件位置。',
+          '介紹多個 Revit MEP 自動化按鈕，包含自動圖例生成、立管標註、管徑標註、距離標註、管底高程標註、MEP 元件註冊與生成、自動套管與自動立管生成。',
       },
       {
-        project: 'Riser Annotation｜立管標註自動化工具',
+        project: 'AutoCAD自動化工具',
         description:
-          '根據 Revit 視圖範圍與管線位置，自動判斷立管標籤方向，並輔助標籤對齊管線中點，提升 MEP 標註一致性與出圖效率。',
+          '介紹 AutoCAD 圖面前處理與資料整理工具，包含批次出圖塊、相似圖例處理、自動管徑辨識、自動圖例圖塊製作，以及批次外部參考併入等功能。',
       },
       {
         project: '潮州機廠工程',
