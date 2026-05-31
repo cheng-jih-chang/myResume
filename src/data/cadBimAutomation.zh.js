@@ -79,5 +79,17 @@ export default {
       ],
       youtubeLink: 'https://www.youtube.com/embed/4L-JUhUhJOE',
     },
+    {
+      projectTitle: '八、相關 GitHub Demo',
+      subtitle:
+        '展示 Revit 外掛開發架構、指令拆分方式與 Hot Reload 開發流程的 GitHub Demo。',
+      descriptionParagraphs: [
+        '這個 GitHub Demo 主要用來展示 Revit 外掛開發的基礎架構。內容包含 Revit Add-in 的專案組織方式、指令進入點、功能邏輯拆分，以及如何讓工具在開發過程中更容易維護與擴充。',
+        'Demo 也展示了 Hot Reload 開發流程的概念，目標是降低 Revit 外掛開發時反覆重啟 Revit 的成本，讓功能測試、UI 調整與邏輯修改可以用更有效率的方式進行。',
+        '這個 repository 並不是完整商業專案原始碼，而是用來呈現我的 Revit 二次開發架構設計、C# / Revit API 開發方式，以及我如何規劃可維護的 BIM 自動化工具專案。',
+      ],
+      youtubeLink: '',
+      githubLink: 'https://github.com/cheng-jih-chang/RevitAddinHotReloadDemo.git',
+    },
   ],
 }

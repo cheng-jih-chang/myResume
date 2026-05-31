@@ -88,5 +88,17 @@ export default {
       ],
       youtubeLink: 'https://www.youtube.com/embed/4L-JUhUhJOE',
     },
+    {
+      projectTitle: '8. Related GitHub Demo',
+      subtitle:
+        'A GitHub demo showing the Revit add-in architecture, command separation, and Hot Reload development workflow.',
+      descriptionParagraphs: [
+        'This GitHub demo is used to demonstrate the basic architecture of Revit add-in development. It includes project organization, Revit command entry points, feature logic separation, and a structure that makes tools easier to maintain and extend during development.',
+        'The demo also shows the concept of a Hot Reload development workflow, which aims to reduce the cost of repeatedly restarting Revit during add-in development and make feature testing, UI adjustments, and logic changes more efficient.',
+        'This repository is not the full source code of a commercial project. Instead, it demonstrates my Revit add-in architecture design, C# / Revit API development approach, and how I organize maintainable BIM automation tool projects.',
+      ],
+      youtubeLink: '',
+      githubLink: 'https://github.com/cheng-jih-chang/RevitAddinHotReloadDemo.git',
+    },
   ],
 }

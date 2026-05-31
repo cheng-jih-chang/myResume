@@ -41,6 +41,7 @@
               </div>
 
               <iframe
+                v-if="section.youtubeLink"
                 width="180"
                 height="130"
                 :src="section.youtubeLink"
@@ -49,6 +50,19 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
+              <a
+                v-else-if="section.githubLink"
+                class="github-demo-link"
+                :href="section.githubLink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{
+                  isZh
+                    ? '👉 點這裡查看 GitHub Demo'
+                    : '👉 View GitHub Demo'
+                }}
+              </a>
             </li>
           </ul>
         </div>
@@ -93,6 +107,8 @@ const iframeTitles = [
   'Automated Riser Generation Demo',
 ]
 
+const isZh = computed(() => locale.value !== 'en')
+
 const ntu = computed(() =>
   resumeData.value.educationAndWorkExperience.find((item) => item.key === 'ntu')
 )
@@ -101,5 +117,12 @@ const ntu = computed(() =>
 <style scoped>
 .automation-section + .automation-section {
   margin-top: 1.25rem;
+}
+
+.github-demo-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
 }
 </style>
