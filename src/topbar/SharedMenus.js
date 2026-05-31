@@ -45,6 +45,11 @@ const sharedMenus = [
         type: 'route',
         route: 'cad-bim-automation',
       },
+      {
+        key: 'submenu.revitAutomationTools',
+        type: 'route',
+        route: 'revit-automation-tools',
+      },
     ],
     hidePriority: 3,
   },

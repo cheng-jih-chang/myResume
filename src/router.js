@@ -12,6 +12,7 @@ import BackendSkills from './views/BackendSkills.vue'
 import PersonalProjects from './views/PersonalProjects.vue'
 import GroupProjects from './views/GroupProjects.vue'
 import CadBimAutomation from './views/CadBimAutomation.vue'
+import RevitAutomationTools from './views/RevitAutomationTools.vue'
 import WorkExperience from './views/WorkExperience.vue'
 import EducationBackground from './views/EducationBackground.vue'
 import ContactMe from './views/ContactMe.vue'
@@ -32,6 +33,11 @@ const routes = [
     path: '/cad-bim-automation',
     name: 'CadBimAutomation',
     component: CadBimAutomation,
+  },
+  {
+    path: '/revit-automation-tools',
+    name: 'RevitAutomationTools',
+    component: RevitAutomationTools,
   },
   { path: '/education/educationBackground', component: EducationBackground },
   { path: '/contact/contactMe', component: ContactMe },
