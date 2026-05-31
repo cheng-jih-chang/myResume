@@ -11,6 +11,7 @@ import FrontendSkills from './views/FrontendSkills.vue'
 import BackendSkills from './views/BackendSkills.vue'
 import PersonalProjects from './views/PersonalProjects.vue'
 import GroupProjects from './views/GroupProjects.vue'
+import CadBimAutomation from './views/CadBimAutomation.vue'
 import WorkExperience from './views/WorkExperience.vue'
 import EducationBackground from './views/EducationBackground.vue'
 import ContactMe from './views/ContactMe.vue'
@@ -27,6 +28,11 @@ const routes = [
   { path: '/projects/personal', component: PersonalProjects },
   { path: '/projects/group', component: GroupProjects },
   { path: '/experience/workExperience', component: WorkExperience },
+  {
+    path: '/cad-bim-automation',
+    name: 'CadBimAutomation',
+    component: CadBimAutomation,
+  },
   { path: '/education/educationBackground', component: EducationBackground },
   { path: '/contact/contactMe', component: ContactMe },
   { path: '/project-link/:id', name: 'Landing', component: Landing },

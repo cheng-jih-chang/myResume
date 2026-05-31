@@ -36,6 +36,19 @@ const sharedMenus = [
     hidePriority: 2,
   },
   {
+    labelKey: 'menu.cadBimAutomation',
+    aria: 'CAD to BIM Automation section',
+    id: 'cadBimMenu',
+    items: [
+      {
+        key: 'submenu.cadBimAutomation',
+        type: 'route',
+        route: 'cad-bim-automation',
+      },
+    ],
+    hidePriority: 3,
+  },
+  {
     labelKey: 'menu.education',
     aria: 'Education section',
     id: 'educationMenu',
